@@ -1,0 +1,38 @@
+#logo {
+    margin: 20px;
+    width: 10%;
+    text-align: center;
+    float: right;
+}
+
+#login {
+    margin: 20px;
+    width: 70%;
+    text-align: center;
+    float: left;
+}
+
+.conteneur {
+    margin: 200px;
+    height: 400px;
+    width: 70%;
+    background-color: beige;
+    padding: 20px;
+}
+
+input {
+    margin: 20 px;
+    width: 20%;
+    border-radius: 8px;
+    margin: 1px 0;
+    border: none;
+}
+
+button {
+    margin: 20 px;
+    width: 15%;
+    border-radius: 8px;
+    margin: 1px 0;
+    border: none;
+    background-color: beige;
+}

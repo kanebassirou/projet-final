@@ -1,0 +1,257 @@
+body {
+    /* background: rgba(128, 128, 128, 0.582); */
+    /* background: #fffae1; */
+    background: rgba(85, 6, 55, 0.034);
+    /* background: url(./media/18326762img.jpg) no-repeat 50% 50%; */
+}
+
+.con1 {
+    /* width: 50%;
+    height: 800px; */
+    height: auto;
+    width: auto;
+    /* margin-left: 30%; */
+    margin: auto;
+    text-align: center;
+    background: rgba(119, 119, 119, 0.651);
+    text-shadow: 1px 3px 2px black;
+    border-radius: 10px;
+}
+
+.cont {
+    display: flex;
+    background: white;
+}
+
+.cont1 {
+    width: 30%;
+    height: 300px;
+    margin: 2px;
+}
+
+.cont1 img:hover {
+    border-radius: 10px;
+    opacity: 0.5;
+    transform: scale(1.05);
+    transition: 0.6s ease-in-out;
+}
+
+.cont1 img {
+    height: 160px;
+}
+
+#hdr {
+    color: white;
+}
+
+input,
+textarea,
+button {
+    border: none;
+    width: 55%;
+    padding: 15px 10px;
+    margin: 1px 0;
+    font-size: 1.2em;
+    font-family: "Advent Pro", sans-serif;
+    border-radius: 8px;
+}
+
+textarea {
+    height: 100px;
+}
+
+.mm {
+    height: 50px;
+    width: 100%;
+    text-shadow: 1px 3px 2px black;
+    border-radius: 50px;
+    background: white;
+}
+
+
+/* .per{
+  font-size: 2em;
+  color: chocolate;
+  margin: 5%;
+font-style:italic;
+
+} */
+
+#icons {
+    width: 50%;
+    text-align: right;
+    display: flex;
+}
+
+#icons a {
+    /* display: inline-block; */
+    padding: 0 15px;
+    font-size: 1.3em;
+    color: blue;
+}
+
+#icons a:hover {
+    transform: scale(1.5);
+    transition: 0.1s;
+}
+
+.comp {
+    background: white;
+    animation: titre ease 5s infinite;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border: 1px solid black;
+    padding: 1px;
+    font-size: 0.7em;
+}
+
+.empl {
+    display: flex;
+}
+
+.emp {
+    width: 34%;
+    height: 300px;
+    overflow: hidden;
+    padding-left: 0.5%;
+}
+
+.codi {
+    height: 120px;
+    width: 75%;
+    margin: 20px;
+    border-radius: 30px;
+    background-color: #fffae1;
+    box-shadow: 1px 3px 2px black;
+}
+
+.codi p {
+    text-align: justify;
+    margin: 50px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+
+/* Nouvelles règles si la fenêtre fait au plus 1024px de large */
+
+@media all and (max-width: 1024px) {
+    h1 {
+        font-size: 4em;
+    }
+    .bloc1 {
+        margin: 1%;
+        height: auto;
+    }
+    .bloc2 {
+        flex-wrap: wrap;
+        margin-top: 10px;
+        /* padding-top:100px; */
+    }
+    .con1 {
+        height: 900px;
+        width: 100%;
+        margin-top: 30%;
+        margin-left: 1%;
+    }
+    .copyright {
+        margin-top: 3%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .bloc2 {
+        height: auto;
+        display: block;
+        margin-top: 0%;
+        padding: 0%;
+    }
+    .bloc1 {
+        margin: 0%;
+    }
+}
+
+#menu {
+    /* display: none; */
+    float: right;
+    margin: 10px;
+    display: none;
+}
+
+.Smenu {
+    display: block;
+    color: white;
+}
+
+@media screen and (max-width: 760px) {
+    nav {
+        display: none;
+    }
+    #menu {
+        display: block;
+    }
+}
+
+.d1 {
+    width: 100%;
+    height: 400px;
+    margin: 50px auto;
+    box-shadow: 0px 15px -5px #777;
+    background-size: contain;
+    animation: imagedefile 15s ease-in-out infinite both;
+}
+
+
+/* .d2{
+  width: 100%;
+  height: 0PX;
+  padding-top: 75%;
+  margin: 50px auto;
+  box-shadow: 0px 0px 10px #777;
+  background-size: contain;
+  animation: fondu 15s ease-in-out infinite both;
+
+} */
+
+
+/* .conteneur{
+  max-width: 570px;
+  margin: 50px auto;
+} */
+
+.d1:hover {
+    animation-play-state: paused;
+}
+
+.d2:hover {
+    animation-play-state: paused;
+}
+
+
+/* 
+@keyframes imagedefile {
+    0% {
+        background-image: url(./media/chantier2.jpg);
+    }
+    33.33% {
+        background-image: url(./media/chantier3.jpg);
+    }
+    66.67% {
+        background-image: url(./media/chantier4.jpg);
+    }
+    100% {
+        background-image: url(./media/chantier\ 1.jpg);
+    }
+} */
+
+.blo {
+    display: flex;
+}

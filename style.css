@@ -1,0 +1,223 @@
+@import url("https://fonts.googleapis.com/css?family=Advent+Pro|Dancing+Script&display=swap");
+body {
+    font-family: "Advent Pro", sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+
+/* <-********************barre de navigation avec une liste deroulante *****************-> */
+
+li {
+    list-style: none !important;
+    color: #fff;
+    padding: 10px;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+
+/* nav ul {
+    background-color:#64abfb;
+    padding:0;
+    margin:0;
+    } */
+
+nav ul li {
+    list-style: none;
+    line-height: 44px;
+    float: right;
+    background-color: #64abfb;
+    background-color: white;
+}
+
+nav ul li a {
+    color: black;
+    padding: 10px;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+li a:hover {
+    border-bottom: 3px #fff solid;
+}
+
+nav ul li ul {
+    display: none;
+    /* Rend le menu déroulant caché par défaut */
+}
+
+nav ul li:hover ul {
+    /* Affiche la bar de Nav au survol de la souris avec la class .drop */
+    z-index: 99999;
+    display: list-item !important;
+    /*il est important il  passe en dessus de tout*/
+    position: absolute;
+    margin-top: 5px;
+    margin-left: -10px;
+}
+
+nav ul li:hover ul li {
+    float: none;
+}
+
+
+/* <-******fin bar de navigation*********-> */
+
+a {
+    text-decoration: none;
+    /* color: black; */
+}
+
+h3 a {
+    color: white;
+}
+
+header li {
+    float: right;
+    font-size: 1em;
+    /* padding-top: 0%; */
+    /* color: rgb(0, 4, 255); */
+    overflow: hidden;
+    background: cyan;
+}
+
+header li a {
+    color: black;
+}
+
+#logo {
+    /* font-family: 'Dancing Script', cursive;
+    font-weight: bold; */
+    float: left;
+}
+
+#imageAcceuil {
+    padding-top: 60px;
+    background: url(./media/IBA\ NDER.jpg) no-repeat fixed 50% 50%;
+    background-size: cover;
+    height: 799px;
+    animation: bacanim 5s ease 15s infinite alternate forwards;
+}
+
+h1 {
+    font-family: "Dancing Script", cursive;
+    text-align: center;
+    /* color: antiquewhite; */
+    color: white;
+    font-size: 6em;
+    margin-top: 100px;
+    text-shadow: 1px 3px 2px black;
+    animation: titre ease 5s;
+}
+
+@keyframes titre {
+    /*Animation de la h1*/
+    0% {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+@keyframes titre2 {
+    0% {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+@keyframes bacanim {
+    0% {
+        background-position: center top;
+        background-size: 100%;
+    }
+    100% {
+        background-position: center top;
+        background-size: 150%;
+    }
+}
+
+#Trait {
+    height: 1px;
+    width: 25%;
+    margin: -3px auto;
+    background-color: #fffae1;
+    box-shadow: 1px 3px 2px black;
+}
+
+h3 {
+    text-align: center;
+    color: antiquewhite;
+    font-size: 3em;
+    text-shadow: 1px 3px 2px black;
+    animation: titre2 ease 5s;
+}
+
+.information {
+    width: 45%;
+    height: 200 px;
+}
+
+.annonce {
+    width: 45%;
+    height: 200 px;
+    /* background: cyan; */
+    margin-left: 7%;
+}
+
+.bloc {
+    display: flex;
+    /* background-color: #FFFAE1; */
+    background-color: white;
+    box-shadow: 1px 3px 2px black;
+}
+
+.bloc h2 {
+    text-align: center;
+    font-size: 1em;
+}
+
+.tt {
+    height: 20px;
+    width: 80%;
+    background-color: red;
+    margin-left: 2%;
+    margin-right: 10%;
+    margin-top: 1%;
+    float: right;
+    padding-top: 2%;
+}
+
+.bloc1 {
+    width: 30%;
+    height: 300px;
+    /* background:red; */
+    margin: 1%;
+}
+
+.bloc1 img {
+    height: 142px;
+}
+
+.bloc2 {
+    display: flex;
+    background: #fffae1;
+    padding: 2%;
+}
+
+.bloc2 h2 {
+    text-align: center;
+}
+
+.copyright {
+    text-align: center;
+    /* margin-top: 2%; */
+}
